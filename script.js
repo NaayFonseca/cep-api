@@ -14,3 +14,33 @@ const consultarCep = () => {
         })
 }
 
+/*const fetchEstados = () => { 
+
+    
+    fetch(`https://servicodados.ibge.gov.br/api/v1/localidades/estados${estados}`)
+    .then(response => response.json())
+    .then(json=>(){
+        console.log(json)
+
+        document.getElementById('Localidade')
+
+    })
+}
+
+fetcheEstados()*/
+
+fetchEstados()
+
+const fetchMunicipios = () => {
+    fetch('https://servicodados.ibge.gov.br/api/v1/localidades/estados/{UF}/municipios')
+    .then(response => response.json())
+    .then(json=>(){
+        console.log(json)
+
+        let options = ''
+
+        json.forEach = (municipio)
+
+    })
+
+}
